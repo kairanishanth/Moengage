@@ -1,0 +1,26 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home Page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div>
+            <h1>Welcome to Your Home Page</h1>
+            <!-- Brewery Search Options -->
+            <label for="brewerySearch">Search for Breweries:</label>
+            <input type="text" id="brewerySearch" placeholder="Enter Brewery Name, City, or Type">
+            <select id="searchOption">
+                <option value="by_name">By Name</option>
+                <option value="by_city">By City</option>
+                <option value="by_type">By Type</option>
+            </select>
+            <button onclick="searchBrewery()">Search</button>
+        </div>
+        
+        <div id="searchResults"></div>
+        <script src="script.js"></script>
+    </body>
+</html>
